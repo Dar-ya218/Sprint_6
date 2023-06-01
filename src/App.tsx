@@ -5,9 +5,7 @@ function App() {
   
 
   return (
-    <div>
-      <MakeWelcome /> 
-    </div>
+   MakeWelcome()
   )
 }
 

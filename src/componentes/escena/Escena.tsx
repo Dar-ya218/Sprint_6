@@ -1,7 +1,9 @@
-function MakeWelcome()  {
-    return (
-    <div> 
-    <h3>Nuestro héroe estaba saliendo por el espacio sideral cuando en la lejanía alivió una nave espacial</h3>
-    </div>);
+import datos from "./datos";
+function MakeWelcome() {
+    return datos.map((element)=>(
+        <div style = { { display:"flex"}}>
+            <h3>{element}</h3>
+        </div>
+    ));
 }
 export default MakeWelcome;
