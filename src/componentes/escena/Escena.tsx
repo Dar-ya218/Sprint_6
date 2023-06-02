@@ -1,9 +1,10 @@
 import datos from "./datos";
+import { DivStyle } from "../styled-components/texto";
 function MakeWelcome() {
     return datos.map((element)=>(
-        <div style = { { display:"flex"}}>
+        <DivStyle >
             <h3>{element}</h3>
-        </div>
+        </DivStyle>
     ));
 }
 export default MakeWelcome;
