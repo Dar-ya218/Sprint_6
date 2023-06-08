@@ -1,23 +1,20 @@
 import { DivStyle } from "../styled-components/texto";
 import { FC } from "react";
-import {datos} from "../../assets/datos";
+import { datos } from "../../assets/datos";
 
 interface welcomeProp  {
     isFocused: number;
-    
 }
 
- export const MakeWelcome:FC<welcomeProp>= ({isFocused})=> {
+export const MakeWelcome: FC<welcomeProp> = ({ isFocused }) => {
     return (
         <div>
-            { 
-            datos.map((frase)=>(
-           <DivStyle className={frase.id === isFocused ? 'focused' : ''}>
-               <h3>{frase.text}</h3>
-           </DivStyle>
-            ))
-            }
-        </div> 
-    )
+            {datos.map((frase) => (
+                <DivStyle key={frase.id} className={frase.id === isFocused ? 'focused' : ''}>
+                    <h3>{frase.text}</h3>
+                </DivStyle>
+            ))}
+        </div>
+    );
 }
 
