@@ -1,6 +1,6 @@
 import { DivStyle } from "../styled-components/texto";
 import { FC } from "react";
-import {datos} from "./datos";
+import {datos} from "../../assets/datos";
 
 interface welcomeProp  {
     isFocused: number;
