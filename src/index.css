@@ -58,7 +58,15 @@ button:focus-visible {
 .focused {
   background-color: rgb(234, 153, 103);
   color: rgb(15, 15, 15);
-  transition: all .3s ease-in-out;
+  font-variant-numeric: ordinal;
+  outline: 4px auto -webkit-focus-ring-color;
+  transition: all .3s ease-out;
+}
+
+.unfocused{
+  background-color:  rgb(211, 208, 207, 0.6);
+  color: rgb(15, 15, 15);
+  font-variant-numeric: ordinal;
 }
 
 @media (prefers-color-scheme: light) {

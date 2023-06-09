@@ -10,7 +10,7 @@ export const MakeWelcome: FC<welcomeProp> = ({ isFocused }) => {
     return (
         <div>
             {datos.map((frase) => (
-                <DivStyle key={frase.id} className={frase.id === isFocused ? 'focused' : ''}>
+                <DivStyle key={frase.id} className={frase.id === isFocused ? 'focused' : 'unfocused'}>
                     <h3>{frase.text}</h3>
                 </DivStyle>
             ))}
