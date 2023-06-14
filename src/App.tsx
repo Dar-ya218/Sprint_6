@@ -6,8 +6,7 @@ import { datos } from "./assets/datos";
 import { StyledBackground } from "./componentes/styled-background";
 
 function App() {
-
-    const titulo = "BIENVENIDO A NUESTRO TUTORIAL"
+    const titulo = "BIENVENIDO A NUESTRO TUTORIAL";
     const [pantallaBienvenida, mostrarPantallaBienvenida] = useState(true);
 
     const ocultarPantalla = () => {
